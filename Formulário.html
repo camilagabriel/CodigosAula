@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+    <!--FIELDSET serve para agrupar dados relacionados-->    
+    <fieldset> 
+    <legend>DADOS PESSOAIS</legend>      
+    <!--formulário estilo  TEXT INPUT - o name tem que ser colocado para futuro backend-->    
+    NOME: <br>
+    <input type="text" name="nome" placeholder="Primeiro nome"> <br>
+    SOBRENOME: <br>
+    <input type="text" name="sobrenome" placeholder="Último nome"> <br>
+    ENDEREÇO: <br>
+    <input type="text" name="endereço"> <br>
+    
+    <!--formulário estilo  SELECT - (LISTA DE OPÇÕES)--> 
+    <p>ESTADO</p>
+    <select>Estados
+    <option value="sp" > São Paulo </option>
+    <option value="rj" > Rio de Janeiro </option>
+    </select>
+   
+     <p>GÊNERO</p><br>  
+     <!--formulário estilo RÁDIO BUTTON - o value tem que ser colocado para futuro backend-->  
+    <input type="radio" name="genero" value="masculino" checked>masculino
+    <input type="radio" name="genero" value="feminino">feminino
+    </fieldset>
+
+    <fieldset>
+    <legend>DADOS AUXILIARES</legend>    
+    <!--formulário estilo  CHECKBOX--> 
+    <p>LOCOMOÇÃO</p><br>
+    <input type="checkbox" name="veiculo1" value="carro" > EU TENHO CARRO <br>
+    <input type="checkbox" name="veiculo2" value="moto" > EU TENHO MOTO <br>
+    <input type="checkbox" name="veiculo3" value="bicicleta" > EU TENHO BICICLETA <br>
+    <input type="checkbox" name="veiculo1" value="nenhum" > nenhum <br>
+    </fieldset>
+    
+    
+    <!--reset limpa tudo que foi digitado dentro do formulário--> 
+    <input type="reset" value="Reset">
+
+
+    </form>
+    
+</body>
+</html>
